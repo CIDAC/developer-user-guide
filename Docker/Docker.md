@@ -1,6 +1,6 @@
 # Docker Installation and User Guide
 
-**[1. Docker installation](./Docker/Docker_installation.md)**
+**[1. Docker installation](./Docker_installation.md)**
 
 **[2. Docker commands](Docker/Docker_commands.md)**
 
