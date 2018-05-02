@@ -1,0 +1,51 @@
+version: '3.5'
+
+services:
+  db:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=production
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - 'application-network'
+
+  pgadmin:
+    image: thajeztah/pgadmin4
+    container_name: pgadmin4
+    ports:
+      - "5050:5050"
+    volumes:
+      - ./pgadmin4:/pgadmin
+    networks:
+      - 'application-network'
+    depends_on:
+      - db
+
+  app:
+    build: .
+    container_name: application
+    entrypoint: [bin/migrate]
+    command: bundle exec puma -C config/puma.rb
+    environment:
+      - RAILS_ENV=${RAILS_ENV}
+      - DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+    env_file:
+      - .env
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    networks:
+      - 'application-network'
+    depends_on:
+      - db
+
+networks:
+  application-network:
+    driver: bridge
