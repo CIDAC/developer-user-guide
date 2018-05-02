@@ -45,7 +45,7 @@ Open your application **database.yml** file and apply this configurations:
 
 >Note:
   >* Replace every occurrence of **myapp** with your application name.
-  >* Now, you can remove database.yml from **gitignore**.
+  >* Now, you are able to remove database.yml from **gitignore**.
 
 ```
 default: &default
