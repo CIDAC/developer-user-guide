@@ -73,7 +73,7 @@ Open the terminal and type the following code:
     $ xclip -sel clip < ~/.ssh/id_rsa.pub
     # Copy the id_rsa.pub content file to the transfer area
 
-Login to [GitLab at CIDAC](gitlab.campos.rj.gov.br) and follow the steps:
+Login to GitLab and follow the steps:
 > 1. Access the **Profile Settings** icon in the application menu;
 > 2. Access the submenu **SSH KEYS**;
 > 3. Click in the green button **Add SSH Key**;
