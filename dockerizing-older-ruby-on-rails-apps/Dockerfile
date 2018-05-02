@@ -28,7 +28,3 @@ COPY Gemfile.lock $RAILS_ROOT/Gemfile.lock
 RUN bundle install
 
 COPY . $RAILS_ROOT
-
-#EXPOSE 3000
-
-#CMD ["bundle","exec", "puma", "-C", "config/puma.rb"]
