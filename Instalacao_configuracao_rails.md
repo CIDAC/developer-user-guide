@@ -69,18 +69,9 @@
        - git commit -m 'first commit'
        - git remote add origin SSH-KEY
 
-
       - rails new nome_do_projeto -d postgresql (criar projeto do zero, sem template)
 
-
-
-
-
-
-
 7 - Configuração do banco de dados (dentro da pasta do projeto/config):
-
-
     - alteração do arquivo database.yml: 
            
            default: &default
@@ -109,14 +100,3 @@
       
 
     - arquivo router.rb (pasta do projeto/config): para posterior configuração de rota
-
-
-
-    
-
-
-
-         
-    
-
-   
