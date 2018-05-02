@@ -39,7 +39,7 @@ Copy [this file](dockerizing-older-ruby-on-rails-apps/.env.example) to your root
 >Note:
   >* Add the .env file to **gitignore**.
 
-## 5. Database.yml
+## 5. database.yml
 
 Open your application **database.yml** file and apply this configurations:
 
