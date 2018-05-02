@@ -48,17 +48,17 @@
 5 - Criação do projeto e configuraçaõ do git
       
       - sudo apt-get install git (instalação do git)
-      - git config --global user.name "Munique de Almeida Maciel"
-      - git config --global user.email "muniquemaciel@campos.rj.gov.br"
+      - git config --global user.name "Your name"
+      - git config --global user.email "Your e-mail"
       - Extrair o anexo (está no email 'Script para facilitar a vida no git') para a pasta home
           incluir no final do arquivo bashrc:
              alias gc='git checkout'
              alias gcb='git checkout -b'
              export PATH=$PATH:~/bin
       - criação do projeto no git
-      - Criar chave de ativação - ssh-keygen -t rsa -C "muniquemaciel@campos.rj.gov.br"
+      - Criar chave de ativação - ssh-keygen -t rsa -C "Your name"
       - Copiar a chave gerada no gitlab
-      - git clone git@gitlab.campos.rj.gov.br:cubo/template-app.git
+      - git clone SSH-KEY
       - rails new nome_do_projeto -m ./template-app/custom_app.rb
       - rake db:create
       - rake db:migrate
@@ -67,7 +67,7 @@
       - git add README
       - bundle install
        - git commit -m 'first commit'
-       - git remote add origin git@gitlab.campos.rj.gov.br:cubo/nome_do_projeto.git
+       - git remote add origin SSH-KEY
 
 
       - rails new nome_do_projeto -d postgresql (criar projeto do zero, sem template)
