@@ -31,7 +31,6 @@ Copy [this file](dockerizing-older-ruby-on-rails-apps/docker-compose.yml) to you
   >* Replace every occurrence of **myapp** with your application name.
   >* Add **postgres** and **pgadmin** folder to **gitignore**.
 
-
 ## 4. Env file
 
 Copy [this file](dockerizing-older-ruby-on-rails-apps/.env.example) to your root application directory. And rename it to **.env**
@@ -47,7 +46,7 @@ Open your application **database.yml** file and apply this configurations:
   >* Replace every occurrence of **myapp** with your application name.
   >* Now, you are able to remove database.yml from **gitignore**.
 
-```
+```nano
 default: &default
   encoding: unicode
   adapter: postgresql
@@ -72,11 +71,12 @@ test:
 #   <<: *default
 #   database: myapp_productions
 ```
+
 ## 6. Installing Puma Gem
 
 Open your Gemfile, deactivate the unicorn gem and add puma gem like showed bellow:
 
-```
+```nano
 # gem 'unicorn', '~> 5.0.1', group: [:staging, :production]
 gem 'puma'
 ```
@@ -93,7 +93,7 @@ Copy [this file](dockerizing-older-ruby-on-rails-apps/migrate) to your **bin** f
 
 To create bin folder execute the following command:
 
-```
+```bash
 docker-compose run app rake rails:update:bin
 ```
 
@@ -101,7 +101,7 @@ docker-compose run app rake rails:update:bin
 
 To build your application image execute the following commands:
 
-```
+```bash
 docker-compose build
 ```
 
@@ -109,14 +109,15 @@ docker-compose build
 
 To start the application execute this command:
 
-```
+```bash
 docker-compose up
 ```
+
 ## 12. Stopping the application
 
 To stop the application execute this command:
 
-```
+```bash
 docker-compose down
 ```
 
@@ -124,12 +125,12 @@ docker-compose down
 
 To test the application execute this command:
 
-```
+```bash
 docker-compose run app rspec/spec
 ```
 
 ## 13. Opening rails console
 
-```
+```bash
 docker-compose run app rails console
 ```
