@@ -15,6 +15,11 @@ The following links describes how you can install tsuru CLI, using pre-compiled 
 * [https://docs.tsuru.io/stable/using/install-client.html](https://docs.tsuru.io/stable/using/install-client.html)
 * [http://tsuru-client.readthedocs.io/en/latest/installing.html?highlight=client#using-the-ppa-ubuntu-only](http://tsuru-client.readthedocs.io/en/latest/installing.html?highlight=client#using-the-ppa-ubuntu-only)
 
+> Note:
+> * If you want to install Tsuru client on Deepin, execute the commands below on terminal:
+> * `curl -s https://packagecloud.io/install/repositories/tsuru/stable/script.deb.sh | sudo os=debian dist=stretch bash`
+> * `sudo apt-get install tsuru-client`
+
 ## Configuring Tsuru
 
 In order to use this tsuru server, you need to add it to your set of targets. Open your terminal and type: 
