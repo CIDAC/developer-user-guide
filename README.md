@@ -7,7 +7,7 @@
 
 **[1. Instalação e configuração de rails](Instalacao_configuracao_rails.md)**
 
-**[2. Intalling Git](Git.md)**
+**[2. Installing Git](Git.md)**
 
 **[3. Docker](docker/Docker.md)**
 
