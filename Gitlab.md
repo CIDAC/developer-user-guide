@@ -12,12 +12,6 @@ Learn Git in your browser for free with [Try Git](https://try.github.io/levels/1
 
 ## 2. Git install
 
-Open the terminal and type:
-
-    $ sudo apt-get install git
-    $ git config --global user.name "YOUR NAME"
-    $ git config --global user.email "YOUR E-MAIL ADDRESS"
-
 If you intend to code in Ruby, add the following piece of code in the end of ~/.bashrc file
 
     gemset(){
@@ -26,61 +20,25 @@ If you intend to code in Ruby, add the following piece of code in the end of ~/.
     }
     export PS1="\`ruby=\$(which ruby 1> /dev/null && ruby -v 2> /dev/null | grep -oP \"^.+?[0-9]+(\.[0-9]+)+\") && echo \"(\$ruby\$(gemset)) \"\`\[\033[36m\]\u \[\033[33m\]\w \[\033[34m\]\$(__git_ps1 '(%s) ')\[\033[00m\]$ "
 
-## 3. Git flow install
-
- Follow the instructions of this [link]( https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
-
-## 4. Installing and configuring SSH for GitLab
-
-### 4.1 Verifying if you have a SSH key in your computer
-
-Open the terminal and type:
-    
-    $ ls -al ~/.ssh
-    # List the files in your /home/.ssh hidden directory
-
-If the result of the above command returns something like id_rsa.pub, skip the next step and go to the section
-**[Adding SSH Key to GitLab](#3-3-Adding-SSH-Key-to-GitLab)**
-
-### 4.2 Creating SSH Key
-
-Open the terminal and type:
-
-    $ ssh-keygen -t rsa -C "your-email"
-
-The output should be something like that:
-
-    Creates a new ssh key, using the provided email as a label
-    Generating public/private rsa key pair.
-    Enter file in which to save the key (/home/you/.ssh/id_rsa):
-
-Type **Enter** to keep the default file name (id_rsa.pub).
-
-Continuing the process:
-
-    Enter passphrase (empty for no passphrase): [Type a passphrase]
-    Enter same passphrase again: [Type passphrase again]
-
-The above lines allow the creation of a password that must be entered in order for access via ssh to be released. This step is optional, you can skip this step by typing **Enter** however its use increases the level of security.
-
-### 4.3 Adding SSH Key to GitLab
+## 3. Adding SSH Key to GitLab
 
 Open the terminal and type the following code:
 
     $ sudo apt-get install xclip
     # The line above install xclip.
- 
+
     $ xclip -sel clip < ~/.ssh/id_rsa.pub
     # Copy the id_rsa.pub content file to the transfer area
 
 Login to GitLab and follow the steps:
+
 > 1. Access the **Profile Settings** icon in the application menu;
 > 2. Access the submenu **SSH KEYS**;
 > 3. Click in the green button **Add SSH Key**;
 > 4. Click in the **Key** box and paste the transfer content;
 > 5. Click in the **Add Key** and done!
 
-## 5. Creating a project
+## 4. Creating a project
 
 After login, click in the green **New Project** button.
 
@@ -96,13 +54,13 @@ After completing the fields correctly, click **Create Project**.
 > * If you are planning split the project in front-end and a back-end module, **do not forget to create a group for your project**
 >
 
-### 5.1 Defining the Projects Milestones
+### 4.1 Defining the Projects Milestones
 
 In this step you need to define the project Milestones.
 
 To do this follow this [instructions](https://docs.gitlab.com/ce/user/project/milestones/)
 
-### 5.2 Defining the Project Issues
+### 4.2 Defining the Project Issues
 
 In this step you need to define the project issues.
 
@@ -110,38 +68,13 @@ To do this follow this [instructions](https://docs.gitlab.com/ce/user/project/is
 
 Please read through the [GitLab Issue Documentation](https://docs.gitlab.com/ce/user/project/issues/index.html) for an overview on GitLab Issues.
 
-### 5.3 Cloning the project
-
-After creating the project you need to donwnload the project.
-
-Open the terminal and type:
-
-    1. $ git clone ssh_url
-    # Clone the repository to your machine
-    # You can get the ssh_url parameter in the project page
-    2. $ cd project_name
-    # Access the project folder
-    3. $ git flow init
-    # Initialize the git flow in the project.
-    # Leave all pre-configured branch options
-    4. $ git push --set-upstream origin master
-    5. $ git push --set-upstream origin develop
-
-## 6. Creating features
-
-Once the issues are already defined, you are able to create a feature branch. To do this execute the following command:
-
-    1. $ git flow feature start <feature name>
-    # Do not forget to make your commits
-    2. $ git flow feature publish <feature name>
-
-## 7. Creating Merge Requests
+## 5. Creating Merge Requests
 
 In this step you need to create a merge request from your feature branch to develop branch.
 
 To do this follow this [instructions](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)
 
-## 8. Hardcore Development Strategies
+## 6. Hardcore Development Strategies
 
 > Note:
 >
@@ -174,7 +107,7 @@ After the development cycle is finished, you can send the created commits to the
     8. $ git push origin master 
     # Send the commits from your local branch to the remote branch
 
-### 8.1. Shared Repositories
+### 6.1. Shared Repositories
 
 For those cases where the development of the functionalities happened with more than one developer at the same time, it is important that the modifications happen in a local branch different from the local branch master. To create it, just run:
 

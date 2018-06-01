@@ -7,14 +7,16 @@
 
 **[1. Instalação e configuração de rails](Instalacao_configuracao_rails.md)**
 
-**[2. Docker](docker/Docker.md)**
+**[2. Intalling Git](Git.md)**
 
-**[3. GitLab Installation and User's Guide](Gitlab.md)**
+**[3. Docker](docker/Docker.md)**
 
-**[4. Tsuru](tsuru/Tsuru.md)**
+**[4. GitLab Installation and User's Guide](Gitlab.md)**
 
-**[5. Editors](Editors.md)**
+**[5. Tsuru](tsuru/Tsuru.md)**
 
-**[6. Ruby on Rails Docker Quickstart](ruby_on_rails_docker_quickstart.md)**
+**[6. Editors](Editors.md)**
 
-**[7. Dockerizing older Ruby on Rails applications](dockerizing_older_ruby_on_rails_applications.md)**
+**[7. Ruby on Rails Docker Quickstart](ruby_on_rails_docker_quickstart.md)**
+
+**[8. Dockerizing older Ruby on Rails applications](dockerizing_older_ruby_on_rails_applications.md)**
