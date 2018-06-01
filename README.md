@@ -1,16 +1,17 @@
 # Development User Guide
 
-### This project brings together instructions to set up development environment.
+## This project brings together instructions to set up development environment
 
-> Note: Feel free to clone the repository and submit suggestions for changes.
+> Note:
+> * Feel free to clone the repository and submit suggestions for changes.
 
 **[1. Instalação e configuração de rails](Instalacao_configuracao_rails.md)**
 
-**[2. Docker](Docker/Docker.md)**
+**[2. Docker](docker/Docker.md)**
 
 **[3. GitLab Installation and User's Guide](Gitlab.md)**
 
-**[4. Tsuru](Tsuru.md)**
+**[4. Tsuru](tsuru/Tsuru.md)**
 
 **[5. Editors](Editors.md)**
 
