@@ -3,7 +3,7 @@
 ## This project brings together instructions to set up development environment
 
 > Note:
-> * Feel free to clone the repository and submit suggestions for changes.
+> * Feel free to fork the repository and submit suggestions for changes.
 
 **[1. Instalação e configuração de rails](Instalacao_configuracao_rails.md)**
 
