@@ -14,7 +14,7 @@ The following links describes how you can install tsuru CLI, using pre-compiled 
 sudo chmod +x ./tsuru-install.sh
 ```
 > * After initialize the installation script, he will ask by the latest golang version, because the script will download and install golang to install tsuru.
-> * The actual version of golang, when this text is being written, is 1.10.2, to see the actual version go to [https://golang.org/project/](golang project)
+> * The actual version of golang, when this text is being written, is 1.10.2, to see the actual version go to [golang project](https://golang.org/project/)
 > * The script may require the sudo password to work properly.
 > * In case of failure, you need to export this two paths in order to complete the installation process:
 ```bash
