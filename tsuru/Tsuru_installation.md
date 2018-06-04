@@ -8,6 +8,16 @@ The following links describes how you can install tsuru CLI, using pre-compiled 
 * [http://tsuru-client.readthedocs.io/en/latest/installing.html?highlight=client#using-the-ppa-ubuntu-only](http://tsuru-client.readthedocs.io/en/latest/installing.html?highlight=client#using-the-ppa-ubuntu-only)
 
 > Note:
-> * If you want to install Tsuru client on Deepin OS, execute the commands below on terminal:
-> * `curl -s https://packagecloud.io/install/repositories/tsuru/stable/script.deb.sh | sudo os=debian dist=stretch bash`
-> * `sudo apt-get install tsuru-client`
+> * If you want a easier way to install tsuru, a script was provided to help in the installation process.
+> * The script require be set execution privilleges to run, you can set that privilleges by running:
+```bash
+sudo chmod +x ./tsuru-install.sh
+```
+> * After initialize the installation script, he will ask by the latest golang version, because the script will download and install golang to install tsuru.
+> * The actual version of golang, when this text is being written, is 1.10.2, to see the actual version go to [https://golang.org/project/](golang project)
+> * The script may require the sudo password to work properly.
+> * In case of failure, you need to export this two paths in order to complete the installation process:
+```bash
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+```
