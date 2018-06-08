@@ -29,7 +29,7 @@ Copy [this file](dockerizing-older-ruby-on-rails-apps/docker-compose.yml) to you
 
 >Note:
   >* Replace every occurrence of **myapp** with your application name.
-  >* Add **postgres** and **pgadmin** folder to **gitignore**.
+  >* Add **postgres** and **pgadmin4** folder to **gitignore**.
   >* Run sudo chmod -R 777 postgres, after create the postgres folder in the root directory.
 
 ## 4. Env file
