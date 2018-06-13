@@ -20,7 +20,12 @@ sh get-docker.sh
 
 ```bash
 sudo usermod -aG docker $USER
+```
 
+> Note:
+> * If the command above do not work try to run the commands below.
+
+```bash
 # This is most likely already created while
 sudo groupadd docker installing docker
 
