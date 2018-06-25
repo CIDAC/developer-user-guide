@@ -4,24 +4,23 @@
 > * You will need to install Docker to follow this instructions.
 > * To install Docker follow this [link](Docker/Docker_installation.md).
 
-## 1. Creating a branch to apply de configuration
+## 1. Creating a branch to apply the configuration
 
-First of all, you need to create a Merge Request/Pull Request.
+First of all, you need to create a branch called **dockerizing_the_application**.
+
+Then you need to create a Merge Request/Pull Request from **dockerizing_the_application** to **develop** branch.
 
 To create a Merge Request follow this [instructions](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)
 
 To create a Pull Request follow this [instructions](https://help.github.com/articles/creating-a-pull-request/)
 
-> Note:
-> * The new branch should be called **dockerizing_the_application**.
-
 ## 2. Dockerfile
 
 Copy [this file](dockerizing-older-ruby-on-rails-apps/Dockerfile) to your root application directory.
 
->Note:
-  >* In the Dockerfile FROM instruction replace **ruby:2.3.3** with your application ruby version.
-  >* Replace every occurrence of **myapp** with your application name.
+> Note:
+  > * In the Dockerfile FROM instruction replace **ruby:2.3.3** with your application ruby version.
+  > * Replace every occurrence of **myapp** with your application name.
 
 ## 3. Development Docker Compose
 
