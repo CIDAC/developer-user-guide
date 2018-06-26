@@ -48,6 +48,9 @@ docker version
 
 6. To install docker-machine go to <https://docs.docker.com/machine/install-machine/>, find the Linux command and execute it in terminal
 
+> Note:
+> * In case the link above do not work, you can go to <https://docs.docker.com/machine/install-machine/#install-machine-directly> and try to install docker-machine as an alternative way.
+
 7. To test if docker-machine is installed, type this command in terminal:
 
 ```bash

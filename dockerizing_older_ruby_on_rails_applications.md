@@ -85,17 +85,17 @@ gem 'puma'
 
 Copy [this file](dockerizing-older-ruby-on-rails-apps/puma.rb) to your **config** folder.
 
-## 8. Configuring migrate file
-
-Copy [this file](dockerizing-older-ruby-on-rails-apps/migrate) to your **bin** folder.
-
-## 9. Creating bin folder
+## 8. Creating bin folder
 
 To create bin folder execute the following command:
 
 ```bash
 docker-compose run app rake rails:update:bin
 ```
+
+## 9. Configuring migrate file
+
+Copy [this file](dockerizing-older-ruby-on-rails-apps/migrate) to your **bin** folder.
 
 ## 10. Building the application image
 
