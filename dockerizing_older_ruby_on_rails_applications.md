@@ -77,7 +77,7 @@ test:
 Open your Gemfile and add puma gem like showed bellow:
 
 ```nano
-# gem 'unicorn', '~> 5.0.1', group: [:staging, :production]
+gem 'unicorn', '~> 5.0.1', group: [:staging, :production]
 gem 'puma'
 ```
 
