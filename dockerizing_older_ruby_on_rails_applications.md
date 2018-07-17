@@ -74,7 +74,7 @@ test:
 
 ## 6. Installing Puma Gem
 
-Open your Gemfile, deactivate the unicorn gem and add puma gem like showed bellow:
+Open your Gemfile and add puma gem like showed bellow:
 
 ```nano
 # gem 'unicorn', '~> 5.0.1', group: [:staging, :production]
