@@ -20,3 +20,5 @@
 **[7. Ruby on Rails Docker Quickstart](ruby_on_rails_docker_quickstart.md)**
 
 **[8. Dockerizing older Ruby on Rails applications](dockerizing_older_ruby_on_rails_applications.md)**
+
+**[9. Nexus Repository Manager - Quick Start](https://guides.sonatype.com/repo3/quick-start-guides/proxying-maven-and-npm/)**
