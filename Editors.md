@@ -18,28 +18,33 @@ Create a file called _settings.json_ and add the following properties:
 
 You could also install the following plugins:
 
-* Java
-    * [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
-    * [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-    * [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+* Angular
+    * [Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
+    * [Angular v7 Snippets
+](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
 
-* Git
-    * [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
-    * [gitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* Automatic Imports
+    * [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
 * Docker
     * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
-
-* Markdown
-    * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 * Editor
     * [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
     * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
+Git
+    * [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
+    * [gitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
 * Html
     * [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
 
-* Automatic Imports
+* Java
+    * [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+    * [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+    * [Lombok](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
+    * [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
-    * [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+* Markdown
+    * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
